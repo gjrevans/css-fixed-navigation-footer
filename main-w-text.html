@@ -11,26 +11,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   </head>
-  <body class="purple">
+  <body class="teal">
     <div class="container">
       <p>Fixed Footer Nav</p>
     </div>
-    <!-- Begin Footer - Only displays @media width 768px -->
+    <!-- Remove the fade class to turn off the fade in - Only displays @media width 768px -->
     <div class="site-navigation-bottom fade">
       <ul class="site-navigation-list">
-        <li class="site-navigation-item">
-          <a class="site-navigation-link" title="Home" href="/">
-            <i class="fa fa-backward"></i>
+        <li class="site-navigation-item with-text">
+          <!-- Add the active class to the icon you want to show as active -->
+          <a class="site-navigation-link active" title="Home" href="/">
+            <i class="fa fa-heart-o"></i>
+            <p class="site-navigation-text">Likes</p>
           </a>
         </li>
-        <li class="site-navigation-item">
+        <li class="site-navigation-item with-text">
           <a class="site-navigation-link" title="Home" href="/">
-            <i class="fa fa-play"></i>
+            <i class="fa fa-bookmark-o"></i>
+            <p class="site-navigation-text">Bookmarks</p>
           </a>
         </li>
-        <li class="site-navigation-item">
+        <li class="site-navigation-item with-text">
           <a class="site-navigation-link" title="Home" href="/">
-            <i class="fa fa-forward"></i>
+            <i class="fa fa-comment-o"></i>
+            <p class="site-navigation-text">Messages</p>
           </a>
         </li>
       </ul>

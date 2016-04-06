@@ -1,0 +1,93 @@
+/* Only Need the CSS Below This Line */
+.site-navigation-bottom {
+  display: none;
+  background-color: #fff;
+  bottom: 0;
+  border-top: 1px solid #d9d9d9;
+  height: 54px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.site-navigation-bottom.fade {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.site-navigation-list {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-navigation-item {
+  line-height: 54px;
+  text-align: center;
+  width: 32%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.site-navigation-link {
+  color: #343435;
+}
+.site-navigation-link.active {
+  color: #6ED3CF;
+}
+
+/* Styles with Text Under Icon */
+.site-navigation-item.with-text {
+  line-height: 40px;
+  text-align: center;
+  width: 32%;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.site-navigation-text {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .site-navigation-bottom {
+    display: block;
+  }
+}
